@@ -1,0 +1,23 @@
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+img  {
+   @include image-prop;
+   &-avatar {
+   @include image-margins {
+   max-height: 100%;
+ }
+}
+}
+.img {
+   &-frame {
+    @include image-margins {
+    padding: 13px;
+    border: 1px solid #ccc;
+  }
+  &-logo {
+    @include image-prop;
+  }
+}
+}
